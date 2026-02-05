@@ -7,9 +7,8 @@ import os
 import time
 
 # --- НАСТРОЙКИ --- #
-FRED_API_KEY = "ключ"
+FRED_API_KEY = "11b3ddb5b880da8059e280fd7015dc35"
 
-# ВСЕ показатели которые тебе нужны
 SERIES_TO_DOWNLOAD = [
     'CPIAUCSL',    # Consumer Price Index
     'UNRATE',      # Unemployment Rate  
@@ -62,7 +61,6 @@ def download_fred_working(**kwargs):
         print(f"\n[{idx}/{len(SERIES_TO_DOWNLOAD)}] Загружаю {series_id}...")
         
         try:
-            # URL и параметры запроса (КАК В ТЕСТОВОМ DAG)
             url = "https://api.stlouisfed.org/fred/series/observations"
             params = {
                 'series_id': series_id,
