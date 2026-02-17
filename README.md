@@ -60,7 +60,7 @@
 git clone git@github.com:artemrassemenok-hash/ml-fred-pipeline.git
 
 2. Перейти в нужную дерикторию.
-cd inflation-forecast
+cd ml-fred-pipeline
 
 3. Активировать docker-compose.
 docker-compose up -d
