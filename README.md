@@ -57,7 +57,7 @@
 
 ### Установка
 1. Клонировать репозиторий.
-git clone https://github.com/yourusername/inflation-forecast.git
+git clone git@github.com:artemrassemenok-hash/ml-fred-pipeline.git
 
 2. Перейти в нужную дерикторию.
 cd inflation-forecast
